@@ -1,0 +1,145 @@
+:root {
+    --black: #000000;
+    --blue: rgb(33, 10, 138);
+    --black2: #020101;
+
+}
+
+
+
+
+body, html {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+* {
+box-sizing: border-box;
+
+}
+
+.container {
+    max-width: 1270px;
+    margin: 0px auto;
+}
+
+header {
+    margin-top: 32px;
+}
+
+.header-content {
+display: flex;
+justify-content: space-between;
+align-items: center;
+
+}
+.header-content__Last {
+    align-items: center;
+    display: flex;
+}
+
+.header-content_Last a:last-of-type {
+  background-color: var(--black2);
+  text-decoration: none;
+  color: #fff;
+  padding: 13px 28px;
+  border-radius: 8px;
+
+
+  transition: background-color .4s ease;
+}
+
+.header-content_Last a:last-of-type:hover {
+    background-color: var(--blue);
+}
+
+nav a {
+    text-decoration: none;
+    margin-right: 45px;
+color: var(--black);
+display: inline-block;
+transition: all .4s ease;
+}
+
+nav a:hover {
+    color: var(--blue);
+    transform: scale(1.05);
+}
+
+nav a:last-of-type {
+    margin-right: 0px;
+
+}
+
+nav a.checked {
+    color: var(--blue);
+}
+
+
+
+
+
+
+
+
+
+
+
+main {
+    margin-top: 90px;
+}
+
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-content h1 {
+    color: var(--black);
+    font-size: 60px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    line-height: 120%;
+    font-weight: bold;
+
+
+    margin-bottom: 30px;
+}
+
+.main-content p {  
+    font-size: 18px;
+    line-height: 200%;
+    margin-bottom: 77px;
+    color: var(--black);
+}
+
+.main-content_buttons a:first-of-type {
+    padding: 10px 30px;
+    background-color: #000000;
+    border-radius: 12px;
+    text-decoration: none;
+    color: #fff;
+    margin-right: 23px;
+
+    transition: transform .4s ease;
+    display: inline-block;
+}
+
+.main-content_buttons a:last-of-type {
+    padding: 10px 30px;
+    background-color: #a7d0f7;
+    border-radius: 12px;
+    text-decoration: none;
+    color: #000000;
+    margin-right: 23px;
+    border-color: #000000;
+
+    transition: transform .4s ease;
+    display: inline-block;
+}
+
+.main-content_buttons a:hover {
+    transform: scale(1.05);
+}
